@@ -29,3 +29,13 @@ A MERN stack-based Visitor Management System with real-time approval, QR code-ba
 1. Clone the repo  
    ```bash
    git clone https://github.com/Akashverma08/VMS.git
+
+2. Install dependencies
+
+cd frontend && npm install
+cd ../backend && npm install
+
+
+3. Run the project
+
+npm start
