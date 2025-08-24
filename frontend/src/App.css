@@ -1,0 +1,225 @@
+/* Reset & global */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #4ba9d1, #f1f8e9);
+}
+
+/* Fullscreen wrapper */
+.fullscreen-form {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Glassmorphism form card */
+.form-card {
+  background: rgba(255, 255, 255, 0.2); 
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 50px 40px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Title */
+.form-card h2 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+}
+.form-card p {
+  color: #f0f0f0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Stepper */
+.stepper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.step {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin: 0 10px;
+  background: rgba(255,255,255,0.2);
+  color: #ddd;
+  transition: 0.3s;
+}
+.step.active {
+  background: #007bff;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0,123,255,0.5);
+}
+
+/* Inputs */
+.form-control {
+  border-radius: 12px;
+  padding: 14px 16px;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+.form-control::placeholder {
+  color: #e0e0e0;
+}
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 4px rgba(0,123,255,0.25);
+  outline: none;
+}
+
+/* Buttons */
+.btn-primary {
+  width: 100%;
+  border-radius: 12px;
+  padding: 14px;
+  font-weight: 600;
+  font-size: 16px;
+  background: linear-gradient(90deg, #007bff, #0056d2);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,123,255,0.4);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Webcam preview / captured photo */
+.webcam-preview, .captured-image {
+  border-radius: 12px;
+  border: 2px solid rgba(255,255,255,0.3);
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+
+/* Secondary button */
+.btn-secondary {
+  padding: 12px 20px;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.35);
+}
+
+
+
+/* Force full-page gradient background for QR Code Page */
+.qr-page {
+  min-height: 100vh !important;   /* Full page height */
+  width: 100vw !important;        /* Full page width */
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 20px;
+
+  /* Same gradient as VisitorForm */
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9) !important;
+}
+
+
+.qr-card {
+  background: rgba(255, 255, 255, 0.15); /* transparent like glass */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.qrcode-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee, #f3e7e9, #e3eeff);
+  background-size: 300% 300%;
+  display: flex;
+}
+
+
+/* Headings */
+.qr-card h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Download button same as VisitorForm button */
+.qr-card .btn-primary {
+  background: #2575fc;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.qr-card .btn-primary:hover {
+  background: #1a5edb;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Har Har Mahadev*/
