@@ -32,10 +32,11 @@ A MERN stack-based Visitor Management System with real-time approval, QR code-ba
 
 2. Install dependencies
 
+```bash
 cd frontend && npm install
 cd ../backend && npm install
 
 
 3. Run the project
-
+```bash
 npm start
